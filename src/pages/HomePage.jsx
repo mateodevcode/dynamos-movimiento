@@ -1,17 +1,14 @@
 import BarraDeNavegacion from "../components/Navbar.jsx"
 import Team from '../components/Team.jsx'
 import Footer from '../components/Footer.jsx'
-// import SomosDynamos from "../components/SomosDynamos.jsx"
 import Eventos from "../components/Eventos.jsx"
 import Bienvenida from "../components/Bienvenida.jsx"
 import Testimonios from '../components/Testimonios.jsx'
-import { useAuth } from "../context/AuthContext.jsx"
 
 function HomePage() {
-  const { themma } = useAuth()
 
   return (
-    <div className={`${themma}`}>
+    <div className="dark:bg-gray-900">
         <BarraDeNavegacion />
         <Bienvenida  />
         <Eventos  />

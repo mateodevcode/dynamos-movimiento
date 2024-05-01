@@ -2,39 +2,3 @@ body {
     box-sizing: border-box;
 }
 
-/* themmas */
-
-.light {
-    background-color: white;
-    color: black;
-}
-
-.dark {
-    background-color: #111827;
-    color: white;
-}
-
-/* themmas */
-
-/* seccion de menu de navbar */
-
-.menu {
-    visibility: visible;
-    background-color: #050B1E;
-    background-color: rgba(5, 11, 30, 0.9);
-    position: absolute;
-    left: 0%;
-    top: 100%;
-    transition: all ease-in 1s;
-  }
-  
-  .ocultarMenu {
-    background-color: rgba(30, 64, 175, 0.2);
-    left: -100%;
-    top: 100%;
-    position: absolute;
-    visibility: hidden;
-    transition: all ease 1s;
-  }
-  
-  /* seccion de menu de navbar */

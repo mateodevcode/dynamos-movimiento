@@ -1,20 +1,22 @@
 import { useForm } from "react-hook-form";
 import { useAuth } from "../context/AuthContext";
 import { useEffect } from "react";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logoDynamos from '../img/logo-dynamo.png'
+import logoDynamos from "../img/logo-dynamo.png";
 
 function RegisterPage() {
-  const { register, handleSubmit, formState: {
-    errors
-  } } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const { singup, isAuthenticated, errors: registerErrors } = useAuth();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
-    if (isAuthenticated) navigate('/tasks')
-  }, [isAuthenticated])
+    if (isAuthenticated) navigate("/tasks");
+  }, [isAuthenticated]);
 
   const onSubmit = handleSubmit(async (values) => {
     singup(values);
@@ -23,7 +25,6 @@ function RegisterPage() {
   return (
     <div className="flex justify-center h-screen items-center md:p-10 rounded-md">
       <div className="max-w-md w-full p-10">
-        
         {registerErrors.map((error, i) => {
           return (
             <div className="bg-red-500 p-2 m-2 text-white" key={i}>
@@ -32,11 +33,19 @@ function RegisterPage() {
           );
         })}
         <div className="w-full flex justify-center items-center">
-          <Link to="/"><img src={logoDynamos} alt="Imagen del logo dynamos" className="md:w-24 sm:w-20 animate-bounce"/></Link>
+          <Link to="/">
+            <img
+              src={logoDynamos}
+              alt="Imagen del logo dynamos"
+              className="md:w-24 sm:w-20 animate-bounce"
+            />
+          </Link>
         </div>
-        <h1 className="text-2xl font-bold text-black mb-10 text-center">Crea tu cuenta en <strong>Dynamos</strong></h1>
+        <h1 className="text-2xl font-bold text-black mb-10 text-center">
+          Crea tu cuenta en <strong>Dynamos</strong>
+        </h1>
         <form onSubmit={onSubmit}>
-        <p className="font-bold">Nombre</p>
+          <p className="font-bold">Nombre</p>
           <input
             type="text"
             name="username"
@@ -64,7 +73,10 @@ function RegisterPage() {
           {errors.password && (
             <p className="text-red-500">Password is required</p>
           )}
-          <button type="submit" className="text-white bg-indigo-600 hover:bg-indigo-400 w-full p-2 rounded-lg my-2">
+          <button
+            type="submit"
+            className="text-white bg-indigo-600 hover:bg-indigo-400 w-full p-2 rounded-lg my-2"
+          >
             Registrate
           </button>
         </form>

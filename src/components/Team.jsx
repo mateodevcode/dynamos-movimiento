@@ -3,16 +3,15 @@ import { BsFacebook, BsInstagram } from "react-icons/bs";
 import teamDynamo from "../data/teamDynamo";
 
 function Team() {
-  const { themma } = useAuth();
 
   return (
-    <div className={`w-full flex justify-center items-center ${themma}`}>
-      <div className={`max-h-max w-10/12 flex flex-col justify-center items-center md:rounded-xl md:mt-32 sm:mt-20 ${themma == "dark" ? "bg-gray-900" : "bg-white"}`}>
+    <div className={`w-full flex justify-center items-center`}>
+      <div className={`max-h-max w-10/12 flex flex-col justify-center items-center md:rounded-xl md:mt-32 sm:mt-20`}>
         <div className="flex flex-col md:w-8/12 sm:w-10/12">
-          <h2 className={`font-sans font-bold md:text-5xl text-center md:mb-6 sm:text-3xl sm:mt-12 sm:mb-3 ${themma == "dark" ? "text-white" : "text-black"}`}>
+          <h2 className={`font-sans font-bold md:text-5xl text-center md:mb-6 sm:text-3xl sm:mt-12 sm:mb-3`}>
             Team Dynamos
           </h2>
-          <p className={`text-center md:text-xl m-2 sm:text-base md:mb-20 sm:mb-5 ${themma == "dark" ? "text-gray-400" : "text-gray-700"}`}>
+          <p className={`text-center md:text-xl m-2 sm:text-base md:mb-20 sm:mb-5`}>
             Únete a nuestra <strong>comunidad Dynamos</strong>, donde el amor y
             la fe nos unen. Juntos crecemos espiritualmente y construimos un
             camino de esperanza. ¡Te invitamos a formar parte de

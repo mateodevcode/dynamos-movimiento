@@ -1,10 +1,8 @@
-import { useAuth } from "../context/AuthContext.jsx";
 import { Link } from 'react-router-dom';
 import logoDynamo from '../img/logo-dynamo.png'
 import { BsFacebook, BsInstagram, BsWhatsapp, BsTiktok, BsYoutube, BsTelegram, BsFillEnvelopeAtFill } from "react-icons/bs";
 
 function Footer() {
-    const { themma } = useAuth()
   
     const enviarCorreo = (event) => {
       event.preventDefault();
@@ -16,7 +14,7 @@ function Footer() {
     };
   
   return (
-    <div className={`flex flex-col justify-center items-center text-gray-400 pt-20 pb-10 ${themma}`}>
+    <div className={`flex flex-col justify-center items-center text-gray-400 pt-20 pb-10`}>
       <Link to="/"><img src={logoDynamo} alt="Logo de Movimiento Dynamo" className='md:w-24 sm:w-16 animate-bounce md:mb-0 sm:mb-5' /></Link>
       <div className="text-gray-400 md:flex flex-row sm:hidden md:my-4">
         <p className="mx-5 hover:text-black font-bold cursor-pointer"><Link to="/">Inicio</Link></p>

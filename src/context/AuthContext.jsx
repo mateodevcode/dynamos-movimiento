@@ -16,8 +16,8 @@ export const AuthProvider = ({ children }) => {
   // const [user, setUser] = useState(null);
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [errors, setErrors] = useState([]);
-  const [themma, setThemma] = useState("light")
-  const [mostrarMenu, setMostrarMenu] = useState("ocultarMenu")
+  const [darkMode, setDarkMode] = useState(false);
+  const [mostrarMenu, setMostrarMenu] = useState(false);
 
   // const singup = async (user) => {
   //   try {
@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
   //     }
   //     setErrors([error.response.data.message]);
   //   }
-    
+
   // };
 
   useEffect(() => {
@@ -53,27 +53,27 @@ export const AuthProvider = ({ children }) => {
     }
   }, [errors]);
 
-  const onClickThemma = () => {
-    if (themma == "dark") {
-      setThemma("light");
+
+  const manejarDark = () => {
+    setDarkMode(!darkMode);
+    if (darkMode) {
+      document.body.classList.remove("dark");
     } else {
-      setThemma("dark");
+      document.body.classList.add("dark");
     }
   };
+
 
   const onclickMenu = () => {
-    if (mostrarMenu == "ocultarMenu") {
-      setMostrarMenu("menu");
+    if (!mostrarMenu) {
+      setMostrarMenu(true);
     } else {
-      setMostrarMenu("ocultarMenu");
+      setMostrarMenu(false);
     }
   };
 
-
   return (
-    <AuthContext.Provider
-      value={{ errors, themma, onClickThemma, mostrarMenu, onclickMenu }}
-    >
+    <AuthContext.Provider value={{ errors, manejarDark, darkMode, mostrarMenu, onclickMenu }}>
       {children}
     </AuthContext.Provider>
   );

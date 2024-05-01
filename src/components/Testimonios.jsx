@@ -1,4 +1,3 @@
-import { useAuth } from "../context/AuthContext";
 import testimonioDynamo from "../data/testimoniosDynamo";
 import {
   BsFillArrowLeftSquareFill,
@@ -8,7 +7,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 function Testimonios() {
-  const { themma } = useAuth();
   const [contador, setContador] = useState(0);
 
   const onclickAdelante = () => {
@@ -30,7 +28,7 @@ function Testimonios() {
   }, [contador]);
 
   return (
-    <div className={`w-full ${themma}`}>
+    <div className={`w-full`}>
       <div className="md:pt-32 sm:pt-20">
         <h2 className="text-center md:text-6xl font-bold select-none sm:text-3xl">
           Nuestros Testimonios
@@ -43,11 +41,8 @@ function Testimonios() {
             />
           </div>
           <div
-            className={`md:w-8/12 md:h-96 flex md:flex-row sm:flex-col justify-center items-center md:mt-32 md:mb-40 select-none sm:mt-16 sm:mb-20 sm:w-9/12 sm:h-96 shadow-lg ${
-              themma == "dark"
-                ? "bg-gray-800 shadow-cyan-500/50"
-                : "bg-gray-100 shadow-cyan-900/50"
-            }`}
+            className={`md:w-8/12 md:h-96 flex md:flex-row sm:flex-col justify-center items-center md:mt-32 md:mb-40 select-none sm:mt-16 sm:mb-20 sm:w-9/12 sm:h-96 shadow-lg "bg-gray-800 shadow-cyan-500/50"
+                `}
           >
             <div className="md:mt-0 sm:-mt-24 md:-mb-0 sm:mb-5">
               <img
@@ -58,23 +53,17 @@ function Testimonios() {
             </div>
             <div className="flex flex-col md:w-6/12 md:ml-20 sm:w-10/12 sm:text-justify">
               <p
-                className={`md:text-2xl md:mb-5 sm:text-xs sm:mb-1 italic md:h-40 sm:h-24 ${
-                  themma == "light" ? "text-gray-700" : "text-gray-400"
-                }`}
+                className={`md:text-2xl md:mb-5 sm:text-xs sm:mb-1 italic md:h-40 sm:h-24 `}
               >
                 {testimonioDynamo[contador].testimonio}
               </p>
               <p
-                className={`md:mb-2 md:text-xl sm:text-xs sm:mb-1 ${
-                  themma == "light" ? "text-black" : "text-white"
-                }`}
+                className={`md:mb-2 md:text-xl sm:text-xs sm:mb-1 `}
               >
                 <strong>{testimonioDynamo[contador].nombre}</strong>
               </p>
               <p
-                className={`md:text-xl sm:text-xs ${
-                  themma == "light" ? "text-gray-700" : "text-gray-400"
-                }`}
+                className={`md:text-xl sm:text-xs`}
               >
                 {testimonioDynamo[contador].cargo}
               </p>
