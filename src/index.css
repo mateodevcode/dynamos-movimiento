@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #fff;
+}
+
+@media (max-width:391px){
+	#roksearch_results{
+		display:none;
+	}
+}
