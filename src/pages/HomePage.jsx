@@ -8,7 +8,7 @@ import Testimonios from '../components/Testimonios.jsx'
 function HomePage() {
 
   return (
-    <div className="dark:bg-gray-900">
+    <div>
         <BarraDeNavegacion />
         <Bienvenida  />
         <Eventos  />

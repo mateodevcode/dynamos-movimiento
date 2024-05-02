@@ -5,9 +5,11 @@ import {
 } from "react-icons/bs";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useAuth } from "../context/AuthContext";
 
 function Testimonios() {
   const [contador, setContador] = useState(0);
+  const { mostrarMenu } = useAuth();
 
   const onclickAdelante = () => {
     setContador(contador + 1);
@@ -28,9 +30,9 @@ function Testimonios() {
   }, [contador]);
 
   return (
-    <div className={`w-full`}>
-      <div className="md:pt-32 sm:pt-20 ">
-        <h2 className="text-center md:text-6xl font-bold select-none dark:text-white  sm:text-3xl">
+    <div className={`w-full dark:bg-gray-900`}>
+      <div className={`${mostrarMenu ? "sm:mt-10": "pt-20"}`}>
+        <h2 className="text-center md:text-6xl font-bold select-none dark:text-white sm:text-3xl sm:mb-5">
           Nuestros Testimonios
         </h2>
         <div className="flex w-full justify-center items-center text-gray-600 dark:text-gray-300">
@@ -41,8 +43,7 @@ function Testimonios() {
             />
           </div>
           <div
-            className={`md:w-8/12 md:h-96 flex md:flex-row sm:flex-col justify-center items-center md:mt-32 md:mb-40 select-none sm:mt-16 sm:mb-20 sm:w-9/12 sm:h-96 shadow-lg "bg-gray-800 shadow-cyan-500/50 "
-                `}
+            className={`md:w-8/12 md:h-96 flex md:flex-row sm:flex-col justify-center items-center md:mt-20 md:mb-40 select-none sm:mt-16 sm:mb-20 sm:w-9/12 sm:h-96 shadow-lg dark:shadow-cyan-500/50 shadow-cyan-900/50 sm:rounded-xl`}
           >
             <div className="md:mt-0 sm:-mt-24 md:-mb-0 sm:mb-5">
               <img

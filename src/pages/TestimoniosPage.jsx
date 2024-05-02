@@ -6,7 +6,7 @@ import Testimonios from "../components/Testimonios.jsx"
 function TestimoniosPage() {
 
   return (
-    <div className="">
+    <div>
         <BarraDeNavegacion />
         <Testimonios />
         <Footer />

@@ -12,9 +12,9 @@ function BarraDeNavegacion() {
   const { onclickMenu } = useAuth();
 
   return (
-    <div className="flex flex-col justify-start items-start mb-10">
+    <div className="flex flex-col justify-start items-start">
       <div
-        className={`w-full h-12 flex flex-row items-center lg:justify-around md:justify-around sm:justify-between  dark:text-white border-gray-200 dark:border-gray-500 border-b-2 z-10 fixed dark:bg-gray-900 bg-gray-200/10`}
+        className={`w-full h-12 flex flex-row items-center lg:justify-around md:justify-around sm:justify-between dark:text-white border-gray-200 dark:border-gray-500 border-b-2 z-10 fixed dark:bg-gray-900 bg-gray-200/10`}
       >
         {/* Imagen principal */}
         <Link to={"/"}>

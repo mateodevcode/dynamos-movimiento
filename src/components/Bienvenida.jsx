@@ -1,9 +1,12 @@
+import { useAuth } from '../context/AuthContext';
 import imagenPrincipal from '../img/imagen-principal.jpg'
 
 function Bienvenida() {
 
+  const { mostrarMenu } = useAuth();
+
   return (
-    <div className={`flex w-full justify-center items-center`}>
+    <div className={`flex w-full justify-center items-center dark:bg-gray-900 ${mostrarMenu ? "pt-0" : "pt-10"}`}>
       <div className="w-10/12 flex md:flex-row md:pt-32 md:pb-24 sm:flex-col sm:justify-center sm:items-center">
         <div className="flex flex-col md:w-11/12 md:text-left md:m-10 md:mt-32 sm:mt-12">
           <h2 className="md:text-6xl md:text-left font-bold md:mb-10 sm:text-2xl sm:text-center sm:mb-10 dark:text-white">

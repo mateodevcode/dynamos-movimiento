@@ -25,13 +25,13 @@ const EnlacesIconsFooter = () => {
         to="https://www.facebook.com/profile.php?id=100092449118564"
         target="_blank"
       >
-        <BsFacebook className="md:mx-5 sm:mx-2 md:text-3xl sm:text-base cursor-pointer hover:text-blue-600 " />
+        <BsFacebook className="md:mx-5 sm:mx-2 md:text-3xl sm:text-base cursor-pointer hover:text-blue-600 hover:bg-white hover:rounded-full" />
       </Link>
       <Link
         to="https://www.tiktok.com/@dynamosoficial?_t=8hH10TZO0FJ&_r=1"
         target="_blank"
       >
-        <BsTiktok className="md:mx-5 sm:mx-2 md:text-3xl sm:text-base cursor-pointer hover:text-black " />
+        <BsTiktok className="md:mx-5 sm:mx-2 md:text-3xl sm:text-base cursor-pointer" />
       </Link>
       <Link
         to="https://www.instagram.com/dynamos_oficial/?igshid=MzMyNGUyNmU2YQ%3D%3D"
