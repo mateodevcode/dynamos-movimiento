@@ -4,7 +4,7 @@ import manuelSandoval from "../img/team/manuel-sandoval.jpeg";
 import jeffreyHernandez from "../img/team/jeffrey-hernandez.jpeg";
 import carlosOrtega from "../img/team/carlos-ortega.jpeg";
 import dennisTorres from "../img/team/dennis-torres.jpeg";
-import dalgisMorrillo from "../img/team/dalgis-morrillo.jpeg";
+import dalgisMorrillo from "../img/team/dalgis-morillo.jpeg";
 import eliasRamos from "../img/team/elias-ramos.jpeg";
 import jhoselinArrieta from "../img/team/jhoselin-arrieta.jpeg";
 import mishellGuarin from "../img/team/mishell-guarin.jpeg";
@@ -57,8 +57,8 @@ const teamDynamo = [
     },
   },
   {
-    nombre: "Dalgis morrillo",
-    cargo: "Cargo pendiente",
+    nombre: "Dalgis Morillo",
+    cargo: "Secretaria General",
     img: dalgisMorrillo,
     redes: {
       facebook: "",
@@ -103,7 +103,7 @@ const teamDynamo = [
   },
   {
     nombre: "David Williams",
-    cargo: "Cargo pendiente",
+    cargo: "Ingeniero de Sistemas",
     img: davidWilliams,
     redes: {
       facebook: "",
