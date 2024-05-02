@@ -7,8 +7,8 @@ function Eventos() {
     <div className={`w-full flex flex-col justify-center items-center`}>
       <div className="flex flex-col justify-center items-center w-10/12 border-b-2 border-x-2 border-gray-200">
       <div className="md:w-11/12 sm:w-10/12 md:mt-32 sm:mt-20">
-        <h3 className="md:text-5xl font-bold md:mb-10 sm:text-2xl sm:mt-10 sm:mb-5">Eventos Dynamos</h3>
-        <p className="md:mb-10 md:text-2xl sm:text-sm sm:mb-3">
+        <h3 className="md:text-5xl font-bold dark:text-white md:mb-10 sm:text-2xl sm:mt-10 sm:mb-5">Eventos Dynamos</h3>
+        <p className="md:mb-10 md:text-2xl sm:text-sm sm:mb-3 text-gray-600 dark:text-gray-300">
           No te pierdas ninguno de <strong>nuestros eventos</strong>. Aquí
           compartiremos y exploraremos juntos los acontecimientos que han
           marcado y marcarán <strong>nuestra comunidad</strong>. ¡Únete a
@@ -27,7 +27,7 @@ const CardEvento = () => {
 
   return eventoDynamo.map((valor, i) => {
     return (
-      <div key={i} className="flex justify-center items-center sm:m-3">
+      <div key={i} className="flex justify-center items-center sm:m-3 text-gray-600 dark:text-gray-300">
         <div className={`flex flex-col justify-center items-center md:p-4 rounded-md sm:p-2`} >
           <img
             src={valor.img}
@@ -42,7 +42,7 @@ const CardEvento = () => {
                 alt={`Imagen de ${valor.creador}`}
                 className="md:w-7 rounded-full md:mx-4 sm:mx-2 sm:w-5"
               />
-              <p className={`md:text-lg text-gray-300 sm:text-xs `}>{valor.creador}</p>
+              <p className={`md:text-lg dark:text-gray-300 sm:text-xs `}>{valor.creador}</p>
             </div>
             <p className={`md:w-80 md:text-lg sm:text-justify sm:text-xs sm:w-52 `}>{valor.titulo}</p>
           </div>
