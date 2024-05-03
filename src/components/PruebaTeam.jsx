@@ -30,7 +30,7 @@ const CardTeam = () => {
   return teamDynamo.map((valor, i) => {
     return (
       <div
-        className={`flex md:max-h-96 md:w-96 rounded-2xl flex-col text-center justify-center items-center sm:max-h-80 sm:w-72 m-4 sm:px-16 sm:py-12 dark:bg-gray-800 shadow-lg dark:shadow-cyan-500/50 shadow-cyan-900/50 fondo-oscuro-claro`}
+        className={`flex md:max-h-96 md:w-96 rounded-2xl flex-col text-center justify-center items-center sm:max-h-80 sm:w-72 m-4 sm:px-16 sm:py-12 dark:bg-gray-800 shadow-lg dark:shadow-cyan-500/50 shadow-cyan-900/50 bg-gray-200`}
         key={i}
       >
         <img
@@ -38,13 +38,13 @@ const CardTeam = () => {
           src={valor.img}
           alt={`Imagen de ${valor.nombre}`}
         />
-        <p className={`font-bold mb-1 cursor-pointer md:text-base sm:text-sm text-white dark:text-white`}>
+        <p className={`font-bold mb-1 cursor-pointer md:text-base sm:text-sm dark:text-white`}>
           {valor.nombre}
         </p>
-        <p className={`mb-4 md:text-sm sm:text-xs dark:text-gray-400 text-gray-200`}>{valor.cargo}</p>
+        <p className={`mb-4 md:text-sm sm:text-xs dark:text-gray-400 text-gray-700`}>{valor.cargo}</p>
         <div className="team-icons flex flex-row justify-center items-center">
-          <BsInstagram className={`mx-2 text-2xl cursor-pointer text-gray-200`} />
-          <BsFacebook className={`mx-2 text-2xl cursor-pointer text-gray-200`} />
+          <BsInstagram className={`mx-2 text-2xl cursor-pointer dark:text-gray-400`} />
+          <BsFacebook className={`mx-2 text-2xl cursor-pointer dark:text-gray-400`} />
         </div>
       </div>
     );

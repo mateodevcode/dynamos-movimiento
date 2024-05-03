@@ -1,10 +1,13 @@
 import "../App.css";
+import { useAuth } from "../context/AuthContext.jsx";
 import eventoDynamo from "../data/eventoDynamo.js";
 
 function Eventos() {
+  const { mostrarMenu } = useAuth();
+
   return (
     <div
-      className={`w-full flex flex-col justify-center items-center dark:bg-gray-900`}
+      className={`w-full flex flex-col justify-center items-center dark:bg-gray-900 ${mostrarMenu ? "mt-0" : "mt-12"}`}
     >
       <div className="flex flex-col justify-center items-center w-10/12">
         <div className="md:w-11/12 sm:w-11/12">
