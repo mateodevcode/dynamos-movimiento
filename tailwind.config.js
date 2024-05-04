@@ -15,7 +15,7 @@ export default {
       // => @media (min-width: 1440px) { ... }
     },
     backgroundImage: {
-      "imagen-aboutus": "url('/src/img/images/fondodynamos.png')",
+      "imagen-aboutus": "url('/src/img/somosdynamos/fondodynamos.png')",
     },
   },
   plugins: [],
