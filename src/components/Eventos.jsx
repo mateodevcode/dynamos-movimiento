@@ -7,7 +7,7 @@ function Eventos() {
 
   return (
     <div
-      className={`w-full flex flex-col justify-center items-center dark:bg-gray-900 ${mostrarMenu ? "mt-0" : "mt-12"}`}
+      className={`w-full flex flex-col justify-center items-center dark:bg-gray-900 ${mostrarMenu ? "mt-0" : "pt-12"}`}
     >
       <div className="flex flex-col justify-center items-center w-10/12">
         <div className="md:w-11/12 sm:w-11/12">
