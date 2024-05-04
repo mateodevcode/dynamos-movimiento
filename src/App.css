@@ -2,21 +2,15 @@ body {
   box-sizing: border-box;
 }
 
+/* Fondo del la card team */
+
 .fondo-oscuro-claro {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(252, 255, 255, 1) 100%
-  );
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%);
 }
 
-.fondo-claro-oscuro {
-  background: rgb(168, 168, 168);
-  background: linear-gradient(
-    90deg,
-    rgba(138, 138, 138, 0.965) 0%,
-    /* rgba(199, 199, 208, 1) 50%, */
-    rgba(255, 255, 255, 1) 100%
-  );
+
+.fondo-oscuro-claro-dark {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%);
 }

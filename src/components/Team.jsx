@@ -1,16 +1,9 @@
-// import { BsFacebook, BsInstagram } from "react-icons/bs";
-import {
-  BsFacebook,
-  BsInstagram,
-  BsLinkedin,
-  BsTiktok,
-  BsYoutube,
-} from "react-icons/bs";
 import teamDynamo from "../data/teamDynamo";
-import { Link } from "react-router-dom";
-import { TbWorldWww } from "react-icons/tb";
+import { useAuth } from "../context/AuthContext";
+import EnlacesIconTeam from "./EnlacesIconTeam";
 
 function Team() {
+  
   return (
     <div
       className={`w-full flex flex-col justify-center items-center dark:bg-gray-900`}
@@ -42,14 +35,16 @@ function Team() {
 }
 
 const CardTeam = () => {
+  const { darkMode } = useAuth();
+
   return teamDynamo.map((valor, i) => {
     return (
       <div
-        className={`flex md:max-h-96 md:w-96 rounded-2xl flex-col text-center justify-center items-center sm:max-h-80 sm:w-72 m-4 sm:px-16 sm:py-12 dark:bg-gray-800 shadow-lg dark:shadow-cyan-500/50 shadow-cyan-900/50 fondo-oscuro-claro`}
+        className={`flex md:max-h-96 md:w-96 rounded-2xl flex-col text-center justify-center items-center sm:max-h-80 sm:w-72 m-4 sm:px-16 sm:py-12 shadow-lg dark:shadow-white/50 shadow-cyan-900/50 fondo-oscuro-claro ${darkMode ? "fondo-oscuro-claro-dark" : "fondo-oscuro-claro"} cursor-pointer lg:hover:scale-105 md:hover:scale-105 transition duration-500 ease-in-out`}
         key={i}
       >
         <img
-          className="flex w-52 rounded-full items-center justify-center mb-6 cursor-pointer"
+          className="flex w-52 rounded-full items-center justify-center mb-6"
           src={valor.img}
           alt={`Imagen de ${valor.nombre}`}
         />
@@ -63,50 +58,7 @@ const CardTeam = () => {
         >
           {valor.cargo}
         </p>
-        <div className="team-icons flex flex-row justify-center items-center">
-          {valor.redes.facebook && (
-            <Link to={valor.redes.facebook} target="_blank">
-              <BsFacebook
-                className={`mx-2 text-2xl cursor-pointer text-gray-200`}
-              />
-            </Link>
-          )}
-          {valor.redes.instagram && (
-            <Link to={valor.redes.instagram} target="_blank">
-              <BsInstagram
-                className={`mx-2 text-2xl cursor-pointer text-gray-200`}
-              />
-            </Link>
-          )}
-          {valor.redes.tikTok && (
-            <Link to={valor.redes.tikTok} target="_blank">
-              <BsTiktok
-                className={`mx-2 text-2xl cursor-pointer text-gray-200`}
-              />
-            </Link>
-          )}
-          {valor.redes.youTube && (
-            <Link to={valor.redes.youTube} target="_blank">
-              <BsYoutube
-                className={`mx-2 text-2xl cursor-pointer text-gray-200`}
-              />
-            </Link>
-          )}
-          {valor.redes.linkedIn && (
-            <Link to={valor.redes.linkedIn} target="_blank">
-              <BsLinkedin
-                className={`mx-2 text-2xl cursor-pointer text-gray-200`}
-              />
-            </Link>
-          )}
-          {valor.redes.web && (
-            <Link to={valor.redes.web} target="_blank">
-              <TbWorldWww
-                className={`mx-2 text-2xl cursor-pointer text-gray-200`}
-              />
-            </Link>
-          )}
-        </div>
+        <EnlacesIconTeam valores={valor} />
       </div>
     );
   });
