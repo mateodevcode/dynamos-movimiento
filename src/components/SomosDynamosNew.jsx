@@ -8,19 +8,19 @@ import vision2 from "../img/somosdynamos/vision2.jpeg"; */
 function SomosDynamosNew() {
   return (
     <div className=" flex flex-col content-center justify-center items-center mt-12 w-full h-full dark:bg-gray-900 ">
-      <div className="w-full h-full flex flex-row justify-center p-16 mb-20 bg-imagen-aboutus">
-        <div className="flex w-[600px] h-[600px] flex-col rounded-full items-center justify-around fondo-claro-oscuro pr-48">
-          <h1 className="text-4xl italic pl-10 font-extrabold">
+      <div className="w-full  h-full flex flex-row justify-center p-16 mb-20 bg-imagen-aboutus">
+        <div className="flex w-[600px] h-[600px] flex-col rounded-full items-center fondo-claro-oscuro pr-56">
+          <h1 className="text-5xl italic pl- pt-32 pb-8 font-extrabold">
             MISIÓN
           </h1>
-          <p className="text-sm font-semibold text-justify px-4 w-60 mb-10">
+          <p className="text-base font-bold text-justify px-4 w-72 mb-10">
             Este movimiento de valientes está inspirado por el Espiritu Santo
             para restaurar el avivamiento en la humanidad y al servicio de la
             poblacion en general, nos movemos en obras espirutuales y
             sociales.Nuestro equipo de trabajo desarrola su gestión sobre una
             solida base de principios cristianos.
           </p>
-          <p className="text-xs italic font-semibold pl-20">
+          <p className="text-sm italic font-semibold pr-5">
             @Dynamos_movimiento
           </p>
         </div>
