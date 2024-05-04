@@ -1,10 +1,11 @@
 body {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Fondo del la card team */
 
 .fondo-oscuro-claro {
+<<<<<<< HEAD
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%);
 }
@@ -13,4 +14,22 @@ body {
 .fondo-oscuro-claro-dark {
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%);
+=======
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(252, 255, 255, 1) 100%
+  );
+}
+
+.fondo-claro-oscuro {
+  background: rgb(168, 168, 168);
+  background: linear-gradient(
+    90deg,
+    rgba(138, 138, 138, 0.965) 0%,
+    /* rgba(199, 199, 208, 1) 50%, */
+    rgba(255, 255, 255, 1) 100%
+  );
+>>>>>>> 6765d81948eda4dd3e8f5093d2d71084c4d590a8
 }
