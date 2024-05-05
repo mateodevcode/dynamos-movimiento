@@ -38,7 +38,7 @@ function Vision() {
           <h1 className="dark:text-gray-300 lg:text-7xl md:text-7xl text-start italic font-extrabold lg:my-16 md:my-16 sm:text-4xl sm:my-2">
             VISIÓN
           </h1>
-          <p className="lg:text-xl dark:text-gray-300 text-gray-900 font-bold text-justify lg:w-96 lg:ml-6 lg:mb-24 z-10 sm:text-[11px] sm:mb-2 sm:px-5 lg:px-0 md:text-xl md:mb-10 md:w-[450px] md:px-16">
+          <p className="lg:text-xl dark:text-gray-300 text-gray-900 font-bold text-justify lg:w-96 lg:ml-6 lg:mb-24 -z-0 sm:text-[11px] sm:mb-2 sm:px-5 lg:px-0 md:text-xl md:mb-10 md:w-[450px] md:px-16">
             Extendernos en los proximos años, con el fin de dewarrollar
             actividades o (proyectos) espirituales y sociales. Logrando un
             impacto positivo en las familias.
