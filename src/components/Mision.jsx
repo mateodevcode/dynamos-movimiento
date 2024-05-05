@@ -7,7 +7,7 @@ function Mision() {
   const { darkMode } = useAuth();
 
   return (
-    <div className=" flex flex-row justify-center items-center lg:mt-12 md:mt-12 sm:mt-12 w-full h-full bg-imagen-aboutus">
+    <div className=" flex flex-row justify-center items-center lg:mt-12 md:mt-12 sm:mt-12 w-full h-full bg-imagen-aboutus sm:mb-20">
       {/* Mision */}
       <div
         className="flex flex-col justify-center items-center h-auto lg:w-[600px] lg:pb-60 lg:pt-20 lg:mb-20 md:w-[600px] md:pb-60 md:pt-20 md:mb-20

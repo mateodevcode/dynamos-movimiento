@@ -5,11 +5,11 @@ import SomosDynamosNew from '../components/SomosDynamosNew'
 
 function SomosDynamosPage() {
   return (
-    <>
+    <div className='bg-black'>
         <Navbar />
         <SomosDynamosNew />
         <Footer />
-    </>
+    </div>
   )
 }
 
