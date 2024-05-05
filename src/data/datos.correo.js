@@ -1,7 +1,7 @@
 export const datosCorreo = {
   destinatario: "dynamosoficial@gmail.com",
   asunto: "Solicitud para unirse al Grupo de Movimiento Dynamos",
-  mensaje: `Estimado equipo de coordinación del Grupo de Movimiento Juvenil, 
+  mensaje: `Estimado equipo de coordinación del Grupo de Movimiento Dynamos, 
     
     Espero que este mensaje les encuentre bien. Mi nombre es [ingresa tu nombre aqui], y me dirijo a ustedes con el propósito de expresar mi interés en unirme a vuestro Grupo de Movimiento Dynamos.
     

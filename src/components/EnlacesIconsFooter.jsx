@@ -9,7 +9,6 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import { enviarCorreo } from "../config/enviarCorreo";
-import MensajeCorreo from "./MensajeCorreo";
 
 const EnlacesIconsFooter = ({ enlace }) => {
   const red = enlace;
