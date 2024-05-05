@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import logoDynamo from "../img/logo-dynamo.png";
 import { enlacesFooter } from "../data/enlaces.footer";
 import EnlacesIconsFooter from "./EnlacesIconsFooter";
+import { enlacesIconFooter } from "../data/enlaces.icon.footer";
 
 function Footer() {
   return (
@@ -20,14 +21,18 @@ function Footer() {
           return (
             <p
               key={i}
-              className="mx-5 hover:text-black font-bold cursor-pointer"
+              className="mx-5 hover:text-black font-bold cursor-pointer dark:hover:text-white"
             >
               <Link to={enlace.ruta}>{enlace.nombre}</Link>
             </p>
           );
         })}
       </div>
-      <EnlacesIconsFooter />
+      {enlacesIconFooter.map((enlace, i) => {
+        const redes = enlace.redes;
+        return <EnlacesIconsFooter key={i} enlace={redes} />;
+      })}
+
       <p className="select-none md:w-full md:text-base sm:text-xs text-center dark:text-gray-400 text-black">
         © 2023 Movimiento Dynamos, Inc. All rights reserved.
       </p>
