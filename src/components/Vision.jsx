@@ -26,7 +26,7 @@ function Vision() {
           <div className="flex w-1/4"></div>
         </div>
       </div>
-      <div className="flex flex-row lg:w-full lg:h-full md:w-full md:h-full justify-center items-center lg:-mt-[620px] lg:-ml-24 md:-mt-[555px] md:-ml-28 sm:w-72 sm:h-72 sm:-mt-[255px]">
+      <div className="flex flex-row lg:w-full lg:h-full md:w-full md:h-full justify-center items-center lg:-mt-[620px] lg:-ml-24 md:-mt-[555px] md:-ml-28 sm:w-72 sm:h-72 sm:-mt-[255px] sm:ml-3">
         <div className="lg:text-9xl md:text-8xl -rotate-90 font-extrabold text-gray-500 dark:opacity-30 opacity-40 lg:-mr-[265px] sm:text-5xl sm:-mr-[100px] md:-mr-[205px]">
           VISION
         </div>
