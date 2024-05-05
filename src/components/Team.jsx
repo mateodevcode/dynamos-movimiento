@@ -23,7 +23,7 @@ function Team() {
             Únete a nuestra <strong>comunidad Dynamos</strong>, donde el amor y
             la fe nos unen. Juntos crecemos espiritualmente y construimos un
             camino de esperanza. ¡Te invitamos a formar parte de
-            <strong>nuestra familia!</strong>
+            <strong> nuestra familia!</strong>
           </p>
         </div>
         <div className="flex flex-wrap justify-center items-center md:mb-20 sm:mb-10">
