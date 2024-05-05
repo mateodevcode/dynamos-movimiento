@@ -1,16 +1,12 @@
-import { useAuth } from "../context/AuthContext";
 import { Link } from "react-router-dom";
 import logoDynamo from "../img/logo-dynamo.png";
 import { enlacesNavbar } from "../data/enlaces.navbar";
 import EnlaceNavbar from "./EnlaceNavbar";
 import ModoDark from "./ModoDark";
-import { BsList } from "react-icons/bs";
 import "../App.css";
-import MenuHamburguesa from "./MenuHamburguesa";
+import MenuHamburger from "./MenuHamburger";
 
 function BarraDeNavegacion() {
-  const { onclickMenu } = useAuth();
-
   return (
     <div className="flex flex-col justify-start items-start">
       <div
@@ -39,19 +35,14 @@ function BarraDeNavegacion() {
             );
           })}
         </div>
-
         <div
           className={`flex flex-row justify-center items-center cursor-pointer animate-pulse mx-4`}
         >
           <EnlaceNavbar nombre="Log in" ruta="/login" />
           <ModoDark />
-          <BsList
-            className={`mx-4 text-2xl md:hidden`}
-            onClick={onclickMenu}
-          />
+          <MenuHamburger />
         </div>
       </div>
-      <MenuHamburguesa />
     </div>
   );
 }

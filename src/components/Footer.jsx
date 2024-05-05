@@ -3,6 +3,7 @@ import logoDynamo from "../img/logo-dynamo.png";
 import { enlacesFooter } from "../data/enlaces.footer";
 import EnlacesIconsFooter from "./EnlacesIconsFooter";
 import { enlacesIconFooter } from "../data/enlaces.icon.footer";
+import MensajeCorreo from "./MensajeCorreo";
 
 function Footer() {
   return (

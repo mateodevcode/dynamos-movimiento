@@ -9,9 +9,9 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import { enviarCorreo } from "../config/enviarCorreo";
+import MensajeCorreo from "./MensajeCorreo";
 
 const EnlacesIconsFooter = ({ enlace }) => {
-
   const red = enlace;
 
   return (
@@ -48,9 +48,7 @@ const EnlacesIconsFooter = ({ enlace }) => {
       )}
       {red.correo && (
         <Link to={red.correo} onClick={enviarCorreo}>
-          <BsFillEnvelopeAtFill
-            className="md:mx-5 sm:mx-2 md:text-3xl sm:text-base cursor-pointer hover:text-black dark:hover:text-white"
-          />
+          <BsFillEnvelopeAtFill className="md:mx-5 sm:mx-2 md:text-3xl sm:text-base cursor-pointer hover:text-black dark:hover:text-white" />
         </Link>
       )}
     </div>
@@ -58,4 +56,3 @@ const EnlacesIconsFooter = ({ enlace }) => {
 };
 
 export default EnlacesIconsFooter;
-
