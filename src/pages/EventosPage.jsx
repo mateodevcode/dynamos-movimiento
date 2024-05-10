@@ -1,11 +1,11 @@
-import Navbar from '../components/Navbar'
 import Eventos from "../components/Eventos"
 import Footer from '../components/Footer'
+import BarraDeNavegacion from '../components/Navbar'
 
 function EventosPage() {
   return (
     <>  
-        <Navbar />
+        <BarraDeNavegacion />
         <Eventos />
         <Footer />
     </>

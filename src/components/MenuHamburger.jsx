@@ -11,12 +11,13 @@ import { BsList } from "react-icons/bs";
 import { enlacesNavbar } from "../data/enlaces.navbar";
 import EnlaceNavbar from "./EnlaceNavbar";
 import { useAuth } from "../context/AuthContext";
+import { Link } from "react-router-dom";
+import logoDynamo from "../img/logo-dynamo.png";
 
 function MenuHamburger() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
-const { darkMode } = useAuth();
-
+  const { darkMode } = useAuth();
 
   return (
     <>
@@ -28,22 +29,36 @@ const { darkMode } = useAuth();
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent bg={darkMode ? "#111827" : "white"}>
-          <DrawerCloseButton bg={darkMode ? "white" : "black"} color={darkMode ? "#111827" : "white"} />
+        <DrawerContent bg={darkMode ? "#000" : "white"}>
+          <DrawerCloseButton
+            bg={darkMode ? "white" : "black"}
+            color={darkMode ? "#000" : "white"}
+          />
 
           <DrawerBody>
-            <div
-              className={`w-full flex flex-col justify-center items-start dark:bg-gray-900 dark:text-gray-300 mt-16`}
-            >
-              {enlacesNavbar.map((enlace, index) => {
-                return (
-                  <EnlaceNavbar
-                    key={index}
-                    nombre={enlace.nombre}
-                    ruta={enlace.ruta}
+            <div className="flex flex-col justify-between items-start">
+              <div
+                className={`w-full flex flex-col justify-center items-start dark:bg-black dark:text-gray-300 mt-16 mb-40`}
+              >
+                {enlacesNavbar.map((enlace, index) => {
+                  return (
+                    <EnlaceNavbar
+                      key={index}
+                      nombre={enlace.nombre}
+                      ruta={enlace.ruta}
+                    />
+                  );
+                })}
+              </div>
+              <div className="mx-2">
+                <Link to={"/"}>
+                  <img
+                    className="w-28 animate-bounce"
+                    src={logoDynamo}
+                    alt="Logo de Dynamo"
                   />
-                );
-              })}
+                </Link>
+              </div>
             </div>
           </DrawerBody>
         </DrawerContent>

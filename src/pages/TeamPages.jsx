@@ -1,12 +1,12 @@
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import BarraDeNavegacion from '../components/Navbar'
 import Team from '../components/Team'
 
 
 function TeamPages() {
   return (
     <>
-        <Navbar />
+        <BarraDeNavegacion />
         <Team />
         <Footer />
     </>

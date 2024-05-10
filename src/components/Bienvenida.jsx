@@ -3,16 +3,16 @@ import imagenPrincipal from '../img/imagen-principal.jpg'
 
 function Bienvenida() {
 
-  const { mostrarMenu } = useAuth();
+  const { darkMode } = useAuth();
 
   return (
-    <div className={`flex w-full justify-center items-center dark:bg-gray-900 ${mostrarMenu ? "pt-0" : "pt-10"}`}>
-      <div className="w-10/12 flex md:flex-row md:pt-32 md:pb-24 sm:flex-col sm:justify-center sm:items-center">
+    <div className={`flex w-full justify-center items-center dark:bg-gray-900 lg:pt-40 md:pt-30 sm:pt-12 ${darkMode ? "fondo-estandar-oscuro" : "fondo-estandar-claro"}`}>
+      <div className="w-10/12 flex md:flex-row md:pb-24 sm:flex-col sm:justify-center sm:items-center">
         <div className="flex flex-col md:w-11/12 md:text-left md:m-10 md:mt-32 sm:mt-12">
-          <h2 className="md:text-6xl md:text-left font-bold md:mb-10 sm:text-2xl sm:text-center sm:mb-10 dark:text-white">
-            Bienvenidos al Movimiento Dynamos
+          <h2 className="md:text-6xl md:text-left font-bold md:mb-10 sm:text-2xl sm:text-center sm:mb-10 text-white">
+            Bienvenidos al Movimiento <strong className='text-black'>Dynamos</strong>
           </h2>
-          <p className="md:flex md:text-xl text-gray-600 dark:text-gray-300 sm:mb-5 sm:hidden">
+          <p className="md:flex md:text-xl text-gray-200 sm:mb-5 sm:hidden">
             Aquí podrán ver lo que hacemos como iglesia, cómo servimos a Dios y
             a nuestro prójimo, y cómo pueden unirse a nosotros en este camino de
             fe..

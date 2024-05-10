@@ -4,21 +4,23 @@ import EnlacesIconTeam from "./EnlacesIconTeam";
 
 function Team() {
   
+  const { darkMode } = useAuth();
+
   return (
     <div
-      className={`w-full flex flex-col justify-center items-center dark:bg-gray-900`}
+      className={`w-full flex flex-col justify-center items-center lg:pt-32 md:pt-32 sm:pt-24 ${darkMode ? "fondo-estandar-oscuro" : "fondo-estandar-claro"}`}
     >
       <div
-        className={`max-h-max flex flex-col justify-center items-center md:rounded-xl lg:mt-24 md:mt-24 sm:mt-20`}
+        className={`max-h-max flex flex-col justify-center items-center md:rounded-xl`}
       >
         <div className="flex flex-col">
           <h2
-            className={`font-sans font-bold md:text-5xl text-center md:mb-10 sm:text-3xl sm:mb-5 dark:text-white`}
+            className={`font-sans font-bold lg:text-5xl md:text-5xl text-center md:mb-10 sm:text-3xl sm:mb-5 dark:text-white`}
           >
             Team Dynamos
           </h2>
           <p
-            className={`text-center md:text-xl sm:text-base md:mb-10 sm:mb-5 text-gray-600 dark:text-gray-300 lg:mx-40 md:mx-40 sm:mx-8`}
+            className={`text-center md:text-2xl sm:text-base md:mb-10 sm:mb-5 text-gray-700 dark:text-gray-300 lg:mx-40 md:mx-40 sm:mx-8`}
           >
             Únete a nuestra <strong>comunidad Dynamos</strong>, donde el amor y
             la fe nos unen. Juntos crecemos espiritualmente y construimos un
@@ -40,7 +42,7 @@ const CardTeam = () => {
   return teamDynamo.map((valor, i) => {
     return (
       <div
-        className={`flex md:max-h-96 md:w-96 rounded-2xl flex-col text-center justify-center items-center sm:max-h-80 sm:w-72 m-4 sm:px-16 sm:py-12 shadow-lg dark:shadow-white/50 shadow-cyan-900/50 fondo-oscuro-claro ${darkMode ? "fondo-oscuro-claro-dark" : "fondo-oscuro-claro"} cursor-pointer lg:hover:scale-105 md:hover:scale-105 transition duration-500 ease-in-out`}
+        className={`flex md:max-h-96 md:w-96 rounded-2xl flex-col text-center justify-center items-center sm:max-h-80 sm:w-72 m-4 sm:px-16 sm:py-12 shadow-lg shadow-white/50 fondo-oscuro-claro ${darkMode ? "fondo-oscuro-claro-dark" : "fondo-oscuro-claro"} cursor-pointer lg:hover:scale-105 md:hover:scale-105 transition duration-500 ease-in-out`}
         key={i}
       >
         <img

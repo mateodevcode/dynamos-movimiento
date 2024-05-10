@@ -1,10 +1,8 @@
-import { useAuth } from "../context/AuthContext";
 import mision1 from "../img/somosdynamos/mision1.jpeg";
 import mision2 from "../img/somosdynamos/mision2.jpeg";
 import mision3 from "../img/somosdynamos/mision3.jpeg";
 
 function Mision() {
-  const { darkMode } = useAuth();
 
   return (
     <div className=" flex flex-row justify-center items-center lg:mt-12 md:mt-12 sm:mt-12 w-full h-full bg-imagen-aboutus sm:mb-20">
@@ -15,23 +13,21 @@ function Mision() {
       >
         {/* circulo */}
         <div
-          className={`flex flex-col rounded-full items-center lg:w-[600px] lg:h-[600px] lg:-mb-20 md:w-[600px] md:h-[600px] md:-mb-20 sm:w-[320px] sm:h-[320px] sm:-mb-64  ${
-            darkMode ? "fondo-claro-oscuro-dark" : "fondo-claro-oscuro"
-          } `}
+          className={`flex flex-col rounded-full items-center lg:w-[600px] lg:h-[600px] lg:-mb-20 md:w-[600px] md:h-[600px] md:-mb-20 sm:w-[320px] sm:h-[320px] sm:-mb-64 bg-black`}
         ></div>
         {/* texto */}
         <div className="lg:w-96 lg:-mt-96 lg:mr-24 md:w-96 md:-mt-96 md:mr-24 sm:w-48 sm:-mt-7 sm:mr-">
-          <h1 className="dark:text-gray-300 italic font-extrabold lg:text-[68px] lg:mb-16 lg:ml-10 md:text-[68px] md:mb-16 md:ml-10 sm:text-3xl sm:mb-3 sm:ml-0">
+          <h1 className="text-gray-300 italic font-extrabold lg:text-[68px] lg:mb-16 lg:ml-10 md:text-[68px] md:mb-16 md:ml-10 sm:text-3xl sm:mb-3 sm:ml-0">
             MISIÓN
           </h1>
-          <p className="text-justify dark:text-gray-300 text-gray-900 font-bold lg:text-base lg:mb-12 lg:w-80 lg:-ml-2 md:text-base md:mb-12 md:w-80 md:-ml-2 sm:text-[11px] sm:mb-6 sm:w-44 sm:-ml-8 sm:font-extrabold-bold">
+          <p className="text-justify text-gray-300 font-bold lg:text-base lg:mb-12 lg:w-80 lg:-ml-2 md:text-base md:mb-12 md:w-80 md:-ml-2 sm:text-[11px] sm:mb-6 sm:w-44 sm:-ml-8 sm:font-extrabold-bold">
             Este movimiento de valientes está inspirado por el Espiritu Santo
             para restaurar el avivamiento en la humanidad y al servicio de la
             poblacion en general, nos movemos en obras espirutuales y
             sociales.Nuestro equipo de trabajo desarrola su gestión sobre una
             solida base de principios cristianos.
           </p>
-          <p className="dark:text-gray-300 italic lg:text-sm md:text-sm sm:text-xs font-semibold lg:ml-8 md:ml-8 sm:ml-2">
+          <p className="text-gray-400 italic lg:text-sm md:text-sm sm:text-xs font-semibold lg:ml-8 md:ml-8 sm:ml-2">
             @Dynamos_movimiento
           </p>
         </div>

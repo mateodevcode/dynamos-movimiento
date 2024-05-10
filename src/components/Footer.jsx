@@ -5,9 +5,10 @@ import EnlacesIconsFooter from "./EnlacesIconsFooter";
 import { enlacesIconFooter } from "../data/enlaces.icon.footer";
 
 function Footer() {
+
   return (
     <div
-      className={`flex flex-col justify-center items-center dark:bg-gray-900 text-gray-600 dark:text-gray-400 pt-20 pb-10`}
+      className={`flex flex-col justify-center items-center text-gray-400 pt-20 pb-10 bg-black`}
     >
       <Link to="/">
         <img
@@ -33,7 +34,7 @@ function Footer() {
         return <EnlacesIconsFooter key={i} enlace={redes} />;
       })}
 
-      <p className="select-none md:w-full md:text-base sm:text-xs text-center dark:text-gray-400 text-black">
+      <p className="select-none md:w-full md:text-base sm:text-xs text-center">
         © 2023 Movimiento Dynamos, Inc. All rights reserved.
       </p>
     </div>

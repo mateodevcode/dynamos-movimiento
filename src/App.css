@@ -5,25 +5,31 @@ body {
 /* Fondo del la card team */
 
 .fondo-oscuro-claro {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%);
 }
 
 
 .fondo-oscuro-claro-dark {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%);
-}
-
-/* Fondo del la mision y vision */
-.fondo-claro-oscuro {
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(170, 169, 169, 0.97) 0%, rgba(252, 255, 255, 1) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%);
 }
 
-.fondo-claro-oscuro-dark {
+
+/* fondo standar */
+
+/* .fondo-estandar-claro {
+  background: rgb(228, 157, 59);
+  background: linear-gradient(180deg, rgba(228, 157, 59, 1) 0%, rgba(36, 5, 3, 1) 100%);
+} */
+
+.fondo-estandar-claro {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(228, 183, 59, 1) 52%, rgba(0, 0, 0, 1) 100%);
+}
+
+
+.fondo-estandar-oscuro {
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(17, 24, 39, 1) 0%, rgba(7, 10, 18, 0.992) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(228, 183, 59, 1) 52%, rgba(0, 0, 0, 1) 100%);
 }
-
-
