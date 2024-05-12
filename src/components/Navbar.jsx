@@ -10,7 +10,7 @@ function BarraDeNavegacion() {
   return (
     <div className="flex flex-col justify-start items-start z-50">
       <div
-        className={`w-full h-12 flex flex-row items-center lg:justify-around md:justify-around sm:justify-between dark:text-white border-gray-200 dark:border-gray-500 border-b-2 z-10 fixed bg-white/50 dark:bg-black/50`}
+        className={`w-full h-12 flex flex-row items-center lg:justify-around md:justify-around sm:justify-between dark:text-white border-gray-200 dark:border-gray-500 border-b-2 z-10 fixed bg-white/50 dark:bg-gray-900/50`}
       >
         {/* Imagen principal */}
         <Link to={"/"}>
@@ -36,7 +36,7 @@ function BarraDeNavegacion() {
           })}
         </div>
         <div
-          className={`flex flex-row justify-center items-center cursor-pointer animate-pulse mx-4`}
+          className={`flex flex-row justify-center items-center cursor-pointer mx-4`}
         >
           <EnlaceNavbar nombre="Log in" ruta="/login" />
           <ModoDark />

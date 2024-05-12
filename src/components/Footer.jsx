@@ -3,12 +3,15 @@ import logoDynamo from "../img/logo-dynamo.png";
 import { enlacesFooter } from "../data/enlaces.footer";
 import EnlacesIconsFooter from "./EnlacesIconsFooter";
 import { enlacesIconFooter } from "../data/enlaces.icon.footer";
+import { useAuth } from "../context/AuthContext";
 
 function Footer() {
 
+  const { darkMode } = useAuth(); 
+
   return (
     <div
-      className={`flex flex-col justify-center items-center text-gray-400 pt-20 pb-10 bg-black`}
+      className={`flex flex-col justify-center items-center text-gray-400 pt-20 pb-10 ${darkMode ? "fondo-estandar-oscuro" : "fondo-estandar-claro"}`}
     >
       <Link to="/">
         <img

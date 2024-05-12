@@ -26,17 +26,17 @@ function Vision() {
           <div className="flex w-1/4"></div>
         </div>
       </div>
-      <div className="flex flex-row lg:w-full lg:h-full md:w-full md:h-full justify-center items-center lg:-mt-[620px] lg:-ml-24 md:-mt-[555px] md:-ml-28 sm:w-72 sm:h-72 sm:-mt-[255px] sm:ml-3">
+      <div className={`flex flex-row lg:w-full lg:h-full md:w-full md:h-full justify-center items-center lg:-mt-[620px] lg:-ml-24 md:-mt-[555px] md:-ml-28 sm:w-72 sm:h-72 sm:-mt-[255px] sm:ml-3`} >
         <div className="lg:text-9xl md:text-8xl -rotate-90 font-extrabold text-gray-500 dark:opacity-30 opacity-40 lg:-mr-[265px] sm:text-5xl sm:-mr-[100px] md:-mr-[205px]">
           VISION
         </div>
         <div
-          className={`flex flex-col lg:w-[500px] lg:h-[500px] lg:justify-around items-center bg-black`}
+          className={`flex flex-col lg:w-[500px] lg:h-[500px] lg:justify-around items-center ${darkMode ? "fondo-estandar-oscuro" : "fondo-estandar-claro"}`}
         >
-          <h1 className="text-gray-300 lg:text-7xl md:text-7xl text-start italic font-extrabold lg:my-16 md:my-16 sm:text-4xl sm:my-2">
+          <h1 className="dark:text-white lg:text-7xl md:text-7xl text-start italic font-extrabold lg:my-16 md:my-16 sm:text-4xl sm:my-2">
             VISIÓN
           </h1>
-          <p className="lg:text-xl text-gray-300 font-bold text-justify lg:w-96 lg:ml-6 lg:mb-24 -z-0 sm:text-[11px] sm:mb-2 sm:px-5 lg:px-0 md:text-xl md:mb-10 md:w-[450px] md:px-16">
+          <p className="lg:text-xl dark:text-white font-bold text-justify lg:w-96 lg:ml-6 lg:mb-24 -z-0 sm:text-[11px] sm:mb-2 sm:px-5 lg:px-0 md:text-xl md:mb-10 md:w-[450px] md:px-16">
             Extendernos en los proximos años, con el fin de dewarrollar
             actividades o (proyectos) espirituales y sociales. Logrando un
             impacto positivo en las familias.

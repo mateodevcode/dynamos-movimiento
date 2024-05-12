@@ -29,16 +29,16 @@ function MenuHamburger() {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent bg={darkMode ? "#000" : "white"}>
+        <DrawerContent bg={darkMode ? "#111827" : "white"}>
           <DrawerCloseButton
             bg={darkMode ? "white" : "black"}
-            color={darkMode ? "#000" : "white"}
+            color={darkMode ? "#111827" : "white"}
           />
 
           <DrawerBody>
             <div className="flex flex-col justify-between items-start">
               <div
-                className={`w-full flex flex-col justify-center items-start dark:bg-black dark:text-gray-300 mt-16 mb-40`}
+                className={`w-full flex flex-col justify-center items-start dark:bg-gray-900 dark:text-gray-300 mt-16 mb-40`}
               >
                 {enlacesNavbar.map((enlace, index) => {
                   return (

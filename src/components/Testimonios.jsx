@@ -32,10 +32,10 @@ function Testimonios() {
   return (
     <div className={`w-full lg:pt-32 md:pt-32 sm:pt-24 ${darkMode ? "fondo-estandar-oscuro" : "fondo-estandar-claro"}`}>
       <div>
-        <h2 className="text-center md:text-5xl font-bold select-none dark:text-white sm:text-3xl sm:mb-5">
+        <h2 className="text-center md:text-5xl font-bold select-none sm:text-3xl sm:mb-5">
           Nuestros Testimonios
         </h2>
-        <div className="flex w-full justify-center items-center text-white">
+        <div className="flex w-full justify-center items-center">
           <div>
             <BsFillArrowLeftSquareFill
               className="md:text-6xl mr-3 cursor-pointer sm:text-3xl"
@@ -59,12 +59,12 @@ function Testimonios() {
                 {testimonioDynamo[contador].testimonio}
               </p>
               <p
-                className={`md:mb-2 md:text-xl sm:text-xs sm:mb-1 text-gray-300`}
+                className={`md:mb-2 md:text-xl sm:text-xs sm:mb-1 text-gray-500`}
               >
                 <strong>{testimonioDynamo[contador].nombre}</strong>
               </p>
               <p
-                className={`md:text-xl sm:text-xs text-gray-400`}
+                className={`md:text-xl sm:text-xs text-gray-500`}
               >
                 {testimonioDynamo[contador].cargo}
               </p>
