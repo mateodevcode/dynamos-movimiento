@@ -42,7 +42,7 @@ const CardTeam = () => {
   return teamDynamo.map((valor, i) => {
     return (
       <div
-        className={`flex md:max-h-96 md:w-96 rounded-2xl flex-col text-center justify-center items-center sm:max-h-80 sm:w-72 m-4 sm:px-16 sm:py-12 shadow-lg shadow-white/50 fondo-oscuro-claro ${darkMode ? "fondo-oscuro-claro-dark" : "fondo-oscuro-claro"} cursor-pointer lg:hover:scale-105 md:hover:scale-105 transition duration-500 ease-in-out`}
+        className={`flex md:max-h-96 md:w-96 rounded-2xl flex-col text-center justify-center items-center sm:max-h-80 sm:w-72 m-4 sm:px-16 sm:py-12 shadow-lg shadow-white/50 fondo-oscuro-claro ${darkMode ? "fondo-oscuro-claro-dark" : "fondo-oscuro-claro"} cursor-pointer lg:hover:scale-105 md:hover:scale-105 transition duration-500 ease-in-out scrol-img`}
         key={i}
       >
         <img

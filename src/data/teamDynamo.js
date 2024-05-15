@@ -11,6 +11,7 @@ import mishellGuarin from "../img/team/mishell-guarin.jpeg";
 import davidWilliams from "../img/team/david-williams.jpeg";
 import hosamGutierrez from "../img/team/hosam-gutierrez.jpeg";
 import luisBossio from "../img/team/luis-bossio.jpeg";
+import darioPadilla from "../img/team/dario-padilla.jpeg";
 
 const teamDynamo = [
   {
@@ -193,6 +194,19 @@ const teamDynamo = [
     redes: {
       facebook: "https://www.facebook.com/julio.rinco.94849?mibextid=NTRm0r7WZyOdZZsz",
       instagram: "https://www.instagram.com/luisortega9509?igsh=OXNqaW5vbXR6NWtv",
+      tikTok: "",
+      youTube: "",
+      linkedIn: "",
+      web: "",
+    },
+  },
+  {
+    nombre: "Dario Padilla",
+    cargo: "Líder de sonido",
+    img: darioPadilla,
+    redes: {
+      facebook: "",
+      instagram: "",
       tikTok: "",
       youTube: "",
       linkedIn: "",

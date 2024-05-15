@@ -37,7 +37,7 @@ const CardEvento = () => {
         className="flex justify-center items-center sm:m-3 sm:mb-5"
       >
         <div
-          className={`flex flex-col justify-center items-center md:p-4 rounded-md`}
+          className={`flex flex-col justify-center items-center md:p-4 rounded-md scrol-img`}
         >
           <img
             src={valor.img}
