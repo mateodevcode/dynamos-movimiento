@@ -7,17 +7,14 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
-import { Link } from "react-router-dom";
 import { TfiLayoutSliderAlt } from "react-icons/tfi";
 import { useAuth } from "../context/AuthContext";
-import eventoDynamo28 from "../data/eventoDynamo28-05-23";
-import eventoDynamo from "../data/eventoDynamo28-05-23";
-// import { CardEvento } from "./Eventos";
 
-function DrawerEventos() {
+function DrawerEventos({imagenes}) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const { darkMode } = useAuth();
+  const indice = imagenes
 
   return (
     <>
@@ -39,8 +36,10 @@ function DrawerEventos() {
           />
 
           <DrawerBody>
-            <div className="flex h-screen flex-grid justify-between items-center">
-              <FotosEventos />
+            <div className="flex flex-wrap justify-between items-center">
+              {indice.map((imagen, index) => (
+                <img key={index} src={imagen} alt={`Imagen ${index}`} />
+              ))}
             </div>
           </DrawerBody>
         </DrawerContent>
@@ -49,26 +48,28 @@ function DrawerEventos() {
   );
 }
 
-const FotosEventos = () => {
-  return eventoDynamo28,eventoDynamo.map((listImage, i) => {
-    
-    return (
-      <div key={i} className="flex justify-center items-center sm:m-3 sm:mb-5">
-        <div
-          className={`flex flex-col justify-center items-center md:p-4 rounded-md`}
-        >
-          <div className="flex flex-col items-end"></div>
-          <Link to={"."}>
-            <img
-              src={listImage.img}
-              alt={`evento ${listImage.titulo}`}
-              className="w-80 rounded-xl mb-4"
-            />
-          </Link>
-        </div>
-      </div>
-    );
-  });
-};
+// const FotosEventos = () => {
+
+//   return eventos.map((imagen, i) => {
+//     return (
+//       <div key={i} className="flex flex-col justify-start items-start">
+//         <div
+//           className={`flex flex-col justify-start items-center`}
+//         >
+//           {imagen.map((img, i) => {
+//             return (
+//               <img
+//                 key={i}
+//                 src={img}
+//                 alt={`evento ${imagen.titulo}`}
+//                 className="w-96 rounded-xl m-4"
+//               />
+//             );
+//           })}
+//         </div>
+//       </div>
+//     );
+//   });
+// };
 
 export default DrawerEventos;

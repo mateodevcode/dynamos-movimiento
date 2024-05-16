@@ -1,47 +1,79 @@
-import imgEvento_1 from '../img/Evento28-05-23-public/IMG_20240514_174647 (1).png'
-import imgEvento_2 from '../img/Evento09-07-23-public/SAVE_20230704_082613.jpg'
-import imgEvento_3 from '../img/Evento17-09-23-public/DYNAMOS-ADORACION-PUBLICA-01 copia.jpg'
-import imgEvento_4 from '../img/evento-4.jpg'
-import imgRaul from '../img/team-raul.jpg'
+// Evento # 1
+import img_evento_01 from "../img/eventos/09-07-23/flayer-evento.jpg";
+import img_evento_01_01 from "../img/eventos/09-07-23/img-01.jpg";
+import img_evento_01_02 from "../img/eventos/09-07-23/img-02.jpg";
+import img_evento_01_03 from "../img/eventos/09-07-23/img-03.jpg";
+import img_evento_01_04 from "../img/eventos/09-07-23/img-04.jpg";
+import img_evento_01_05 from "../img/eventos/09-07-23/img-05.jpg";
+import img_evento_01_06 from "../img/eventos/09-07-23/img-06.jpg";
+import img_evento_01_07 from "../img/eventos/09-07-23/img-07.jpg";
+import img_evento_01_08 from "../img/eventos/09-07-23/img-08.jpg";
 
-const eventoDynamo = [
-    {
-        titulo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum.",
-        descripcion: "",
-        fecha: "Mayo 28, 2023",
-        creador: "Mateo Lizcano",
-        imgCreador: imgRaul,
-        img: imgEvento_1,
-        video: "",
-    },
-    {
-        titulo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum.",
-        descripcion: "",
-        fecha: "Julio 09, 2023",
-        creador: "Mateo Lizcano",
-        imgCreador: imgRaul,
-        img: imgEvento_2,
-        video: "",
-    },
-    {
-        titulo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum.",
-        descripcion: "",
-        fecha: "Septiembre 17, 2023",
-        creador: "Mateo Lizcano",
-        imgCreador: imgRaul,
-        img: imgEvento_3,
-        video: "",
-    },
-    {
-        titulo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum.",
-        descripcion: "",
-        fecha: "Marzo 16, 2023",
-        creador: "Mateo Lizcano",
-        imgCreador: imgRaul,
-        img: imgEvento_4,
-        video: "",
-    },
-    
-]
+// Evento # 2
+import img_evento_02 from "../img/eventos/17-09-23/flayer-evento.jpg";
+import img_evento_02_01 from "../img/eventos/17-09-23/img-01.jpg";
+import img_evento_02_02 from "../img/eventos/17-09-23/img-02.jpg";
+import video_evento_02_01 from "../img/eventos/17-09-23/video-01.mp4";
 
-export default eventoDynamo
+// Evento # 3
+import img_evento_03 from "../img/eventos/28-05-23/flayer-evento.jpg";
+import img_evento_03_01 from "../img/eventos/28-05-23/img-01.jpg";
+import img_evento_03_02 from "../img/eventos/28-05-23/img-02.jpg";
+import img_evento_03_03 from "../img/eventos/28-05-23/img-03.jpg";
+import img_evento_03_04 from "../img/eventos/28-05-23/img-04.jpg";
+
+// Creador de eventos
+import imgRaul from "../img/team-raul.jpg";
+
+export const eventos = [
+  {
+    id: 3,
+    titulo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum.",
+    descripcion: "",
+    fecha: "Mayo 28, 2023",
+    creador: "Mateo Lizcano",
+    imgCreador: imgRaul,
+    imgPrincipal: img_evento_03,
+    img: [
+      img_evento_03_01,
+      img_evento_03_02,
+      img_evento_03_03,
+      img_evento_03_04,
+    ],
+    video: [],
+  },
+  {
+    id: 2,
+    titulo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum.",
+    descripcion: "",
+    fecha: "Julio 09, 2023",
+    creador: "Mateo Lizcano",
+    imgCreador: imgRaul,
+    imgPrincipal: img_evento_02,
+    img: [img_evento_02_01, img_evento_02_02],
+    video: [video_evento_02_01],
+  },
+  {
+    id: 1,
+    titulo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum.",
+    descripcion: "",
+    fecha: "Septiembre 17, 2023",
+    creador: "Mateo Lizcano",
+    imgCreador: imgRaul,
+    imgPrincipal: img_evento_01,
+    img: [
+      img_evento_01_01,
+      img_evento_01_02,
+      img_evento_01_03,
+      img_evento_01_04,
+      img_evento_01_05,
+      img_evento_01_06,
+      img_evento_01_07,
+      img_evento_01_08,
+    ],
+    video: [],
+  },
+];

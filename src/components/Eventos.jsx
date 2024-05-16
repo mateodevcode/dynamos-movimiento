@@ -1,14 +1,16 @@
 import "../App.css";
 import { useAuth } from "../context/AuthContext.jsx";
-import eventoDynamo from "../data/eventoDynamo.js";
 import DrawerEventos from "./DrawerEventos.jsx";
+import { eventos } from "../data/eventoDynamo.js";
 
 function Eventos() {
   const { darkMode } = useAuth();
 
   return (
     <div
-      className={`w-full flex flex-col justify-center items-center lg:pt-24 md:pt-24 sm:pt-12 ${darkMode ? "fondo-estandar-oscuro" : "fondo-estandar-claro"}`}
+      className={`w-full flex flex-col justify-center items-center lg:pt-24 md:pt-24 sm:pt-12 ${
+        darkMode ? "fondo-estandar-oscuro" : "fondo-estandar-claro"
+      }`}
     >
       <div className="flex flex-col justify-center items-center w-10/12">
         <div className="md:w-11/12 sm:w-11/12">
@@ -31,20 +33,35 @@ function Eventos() {
 }
 
 const CardEvento = () => {
-  return eventoDynamo.map((valor, i) => {
+  const { indiceSeleccionado, handleClick } = useAuth();
+
+  const evento_01 = eventos[0].map((evento) => {
+    evento.img;
+  });
+  const evento_02 = eventos.map((evento) => {
+    evento.img[1];
+  });
+  const evento_03 = eventos.map((evento) => {
+    evento.img[2];
+  });
+  console.log(evento_01);
+  const img_eventos = [[evento_01], [evento_02], [evento_03]];
+
+  return eventos.map((valor, i) => {
     return (
-      <div
-        key={i}
-        className="flex justify-center items-center sm:m-3 sm:mb-5"
-      >
+      <div key={i} className="flex justify-center items-center sm:m-3 sm:mb-5">
         <div
-          className={`flex flex-col justify-center items-center md:p-4 rounded-md`}
+          className={`flex flex-col justify-center items-center md:p-4 rounded-md scrol-img`}
+          onClick={() => handleClick(i)}
         >
-          <DrawerEventos />
+          {/* <DrawerEventos /> */}
+          {indiceSeleccionado !== null && (
+            <DrawerEventos imagenes={img_eventos[indiceSeleccionado]} />
+          )}
           <img
-            src={valor.img}
+            src={valor.imgPrincipal}
             alt={`evento ${valor.titulo}`}
-            className="w-80 rounded-xl mb-4"
+            className="w-80 h-96 rounded-xl mb-4"
           />
           <div className="flex flex-col justify-center items-start">
             <div className="flex mb-3">

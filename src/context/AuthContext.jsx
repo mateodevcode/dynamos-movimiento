@@ -18,6 +18,7 @@ export const AuthProvider = ({ children }) => {
   const [errors, setErrors] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
   const [mostrarMenu, setMostrarMenu] = useState(false);
+  const [indiceSeleccionado, setIndiceSeleccionado] = useState(null);
 
   // const singup = async (user) => {
   //   try {
@@ -72,8 +73,14 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const handleClick = (indice) => {
+    setIndiceSeleccionado(indice);
+  };
+  
+
+
   return (
-    <AuthContext.Provider value={{ errors, manejarDark, darkMode, mostrarMenu, onclickMenu }}>
+    <AuthContext.Provider value={{ errors, manejarDark, darkMode, mostrarMenu, onclickMenu, handleClick, indiceSeleccionado }}>
       {children}
     </AuthContext.Provider>
   );
