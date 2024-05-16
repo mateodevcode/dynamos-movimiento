@@ -1,6 +1,7 @@
 import "../App.css";
 import { useAuth } from "../context/AuthContext.jsx";
 import eventoDynamo from "../data/eventoDynamo.js";
+import DrawerEventos from "./DrawerEventos.jsx";
 
 function Eventos() {
   const { darkMode } = useAuth();
@@ -37,8 +38,9 @@ const CardEvento = () => {
         className="flex justify-center items-center sm:m-3 sm:mb-5"
       >
         <div
-          className={`flex flex-col justify-center items-center md:p-4 rounded-md scrol-img`}
+          className={`flex flex-col justify-center items-center md:p-4 rounded-md`}
         >
+          <DrawerEventos />
           <img
             src={valor.img}
             alt={`evento ${valor.titulo}`}
