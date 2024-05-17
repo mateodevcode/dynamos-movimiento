@@ -1,7 +1,6 @@
 import "../App.css";
 import { useAuth } from "../context/AuthContext.jsx";
-import DrawerEventos from "./DrawerEventos.jsx";
-import { eventos } from "../data/eventoDynamo.js";
+import CardEvento from "./CardEvento.jsx";
 
 function Eventos() {
   const { darkMode } = useAuth();
@@ -32,59 +31,5 @@ function Eventos() {
   );
 }
 
-const CardEvento = () => {
-  const { indiceSeleccionado, handleClick } = useAuth();
-
-  const evento_01 = eventos[0].map((evento) => {
-    evento.img;
-  });
-  const evento_02 = eventos.map((evento) => {
-    evento.img[1];
-  });
-  const evento_03 = eventos.map((evento) => {
-    evento.img[2];
-  });
-  console.log(evento_01);
-  const img_eventos = [[evento_01], [evento_02], [evento_03]];
-
-  return eventos.map((valor, i) => {
-    return (
-      <div key={i} className="flex justify-center items-center sm:m-3 sm:mb-5">
-        <div
-          className={`flex flex-col justify-center items-center md:p-4 rounded-md scrol-img`}
-          onClick={() => handleClick(i)}
-        >
-          {/* <DrawerEventos /> */}
-          {indiceSeleccionado !== null && (
-            <DrawerEventos imagenes={img_eventos[indiceSeleccionado]} />
-          )}
-          <img
-            src={valor.imgPrincipal}
-            alt={`evento ${valor.titulo}`}
-            className="w-80 h-96 rounded-xl mb-4"
-          />
-          <div className="flex flex-col justify-center items-start">
-            <div className="flex mb-3">
-              <p className={`md:text-lg sm:text-xs`}>{valor.fecha}</p>
-              <img
-                src={valor.imgCreador}
-                alt={`Imagen de ${valor.creador}`}
-                className="md:w-7 rounded-full md:mx-4 sm:mx-2 sm:w-5"
-              />
-              <p className={`md:text-lg dark:text-gray-300 sm:text-xs `}>
-                {valor.creador}
-              </p>
-            </div>
-            <p
-              className={`md:w-80 md:text-lg sm:text-justify sm:text-xs sm:w-80 `}
-            >
-              {valor.titulo}
-            </p>
-          </div>
-        </div>
-      </div>
-    );
-  });
-};
 
 export default Eventos;

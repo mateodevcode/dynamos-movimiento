@@ -28,12 +28,12 @@ import imgRaul from "../img/team-raul.jpg";
 export const eventos = [
   {
     id: 3,
-    titulo:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum.",
-    descripcion: "",
-    fecha: "Mayo 28, 2023",
-    creador: "Mateo Lizcano",
-    imgCreador: imgRaul,
+    titulo: `Evento de prueba 3`,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum. lorem",
+    fecha: "Mayo 28 2023",
+    autor: "Manuel Sandoval",
+    imgAutor: imgRaul,
     imgPrincipal: img_evento_03,
     img: [
       img_evento_03_01,
@@ -45,24 +45,24 @@ export const eventos = [
   },
   {
     id: 2,
-    titulo:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum.",
-    descripcion: "",
-    fecha: "Julio 09, 2023",
-    creador: "Mateo Lizcano",
-    imgCreador: imgRaul,
+    titulo: "Evento de prueba 2",
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum. lorem",
+    fecha: "Julio 09 2023",
+    autor: "Manuel Sandoval",
+    imgAutor: imgRaul,
     imgPrincipal: img_evento_02,
     img: [img_evento_02_01, img_evento_02_02],
     video: [video_evento_02_01],
   },
   {
     id: 1,
-    titulo:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum.",
-    descripcion: "",
-    fecha: "Septiembre 17, 2023",
-    creador: "Mateo Lizcano",
-    imgCreador: imgRaul,
+    titulo: "Evento de prueba 1",
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo nobis dolorum. lorem",
+    fecha: "Septiembre 17 2023",
+    autor: "Manuel Sandoval",
+    imgAutor: imgRaul,
     imgPrincipal: img_evento_01,
     img: [
       img_evento_01_01,

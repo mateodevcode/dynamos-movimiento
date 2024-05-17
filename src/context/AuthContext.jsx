@@ -1,6 +1,8 @@
+import { Drawer } from "@chakra-ui/react";
 import { createContext, useState, useContext } from "react";
 // import { loginRequest, registerRequest } from "../api/auth";
 import { useEffect } from "react";
+import DrawerEventos from "../components/DrawerEventos";
 
 export const AuthContext = createContext();
 
