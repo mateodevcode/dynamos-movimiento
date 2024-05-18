@@ -5,14 +5,14 @@ body {
 /* Fondo del la card team */
 
 .fondo-oscuro-claro {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%);
+  background: #111827;
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%); */
 }
 
 
 .fondo-oscuro-claro-dark {
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%);
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%); */
 }
 
 
@@ -51,7 +51,7 @@ body {
 
   animation-timeline: --image;
   animation-name: show;
-  
+
   animation-range: entry 25% cover 50%;
   animation-fill-mode: both;
 }

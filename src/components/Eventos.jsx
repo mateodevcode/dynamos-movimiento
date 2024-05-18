@@ -23,7 +23,7 @@ function Eventos() {
             nosotros en este momento especial!
           </p>
         </div>
-        <div className="flex flex-wrap justify-center items-center sm:w-11/12 sm:mb-10 md:mb-40">
+        <div className="flex flex-wrap justify-center items-start sm:w-11/12 sm:mb-10 md:mb-40">
           <CardEvento />
         </div>
       </div>

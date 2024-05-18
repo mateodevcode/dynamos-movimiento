@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoDynamo from "../img/logo-dynamo.png";
+import logoDynamo from "../img/logo/logo-dynamo.png";
 import { enlacesFooter } from "../data/enlaces.footer";
 import EnlacesIconsFooter from "./EnlacesIconsFooter";
 import { enlacesIconFooter } from "../data/enlaces.icon.footer";

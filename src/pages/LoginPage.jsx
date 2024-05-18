@@ -1,7 +1,7 @@
 import {useForm} from 'react-hook-form'
 import {useAuth} from '../context/AuthContext'
 import {Link} from 'react-router-dom'
-import logoDynamos from '../img/logo-dynamo.png'
+import logoDynamos from '../img/logo/logo-dynamo.png'
 
 function LoginPage() {
 

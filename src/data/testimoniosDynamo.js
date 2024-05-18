@@ -1,11 +1,11 @@
-import imgTestimonio01 from "../img/testimonio-01.jpg";
-import imgTestimonio02 from "../img/testimonio-02.jpg";
-import imgTestimonio03 from "../img/testimonio-03.jpg";
+import emanuelSantiago from "../img/testimonio/emanuel-santiago.jpg";
+import imgTestimonio02 from "../img/testimonio/testimonio-02.jpg";
+import imgTestimonio03 from "../img/testimonio/testimonio-03.jpg";
 
 const testimonioDynamo = [
   {
     nombre: "Mateo Lizcano",
-    img: imgTestimonio01,
+    img: emanuelSantiago,
     cargo: "Desarrollador de Software",
     testimonio: `"Gravida quam mi erat tortor neque molestie. Auctor aliquet at
         porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor
@@ -13,8 +13,8 @@ const testimonioDynamo = [
         scelerisque bibendum"`,
   },
   {
-    nombre: "Mateo Lizcano",
-    img: imgTestimonio01,
+    nombre: "Emanuel Santiago",
+    img: emanuelSantiago,
     cargo: "Desarrollador de Software",
     testimonio: `"Uniéndome a Dynamos, descubrí un espacio donde la confianza y el apoyo son inquebrantables. He superado obstáculos que nunca pensé que podría superar. Dynamos cambió mi vida."`,
   },

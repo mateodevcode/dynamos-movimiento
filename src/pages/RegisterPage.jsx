@@ -3,7 +3,7 @@ import { useAuth } from "../context/AuthContext";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logoDynamos from "../img/logo-dynamo.png";
+import logoDynamos from "../img/logo/logo-dynamo.png";
 
 function RegisterPage() {
   const {

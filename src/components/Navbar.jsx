@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoDynamo from "../img/logo-dynamo.png";
+import logoDynamo from "../img/logo/logo-dynamo.png";
 import { enlacesNavbar } from "../data/enlaces.navbar";
 import EnlaceNavbar from "./EnlaceNavbar";
 import ModoDark from "./ModoDark";

@@ -205,7 +205,7 @@ const teamDynamo = [
     cargo: "Líder de sonido",
     img: darioPadilla,
     redes: {
-      facebook: "",
+      facebook: "https://www.facebook.com/share/Ng2uFkPGjCfv2R88/?mibextid=qi2Omg",
       instagram: "",
       tikTok: "",
       youTube: "",

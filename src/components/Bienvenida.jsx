@@ -1,5 +1,5 @@
 import { useAuth } from '../context/AuthContext';
-import imagenPrincipal from '../img/imagen-principal.jpg'
+import imgBienvenida from '../img/bienvenida/img-bienvenida.jpg'
 
 function Bienvenida() {
 
@@ -22,7 +22,7 @@ function Bienvenida() {
           <div className="shadow-lg shadow-gray-900/50 rounded-lg sm:mb-10">
             <img
               className="rounded-lg animate-pulse"
-              src={imagenPrincipal}
+              src={imgBienvenida}
               alt="Imagen principal de bienvenida"
             />
           </div>

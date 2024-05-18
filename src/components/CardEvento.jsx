@@ -46,7 +46,7 @@ const CardEvento = () => {
               <p className={`dark:text-gray-300`}>{valor.autor}</p>
             </div>
             <p
-              className={`md:w-80 md:text-lg sm:text-justify sm:text-xs sm:w-80 mb-4`}
+              className={`md:w-80 md:text-lg sm:text-justify sm:text-xs sm:w-80 mb-4 h-28`}
             >
               {valor.descripcion}
             </p>

@@ -12,7 +12,7 @@ import { enlacesNavbar } from "../data/enlaces.navbar";
 import EnlaceNavbar from "./EnlaceNavbar";
 import { useAuth } from "../context/AuthContext";
 import { Link } from "react-router-dom";
-import logoDynamo from "../img/logo-dynamo.png";
+import logoDynamo from "../img/logo/logo-dynamo.png";
 
 function MenuHamburger() {
   const { isOpen, onOpen, onClose } = useDisclosure();
