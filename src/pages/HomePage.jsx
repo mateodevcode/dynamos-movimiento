@@ -2,9 +2,9 @@ import BarraDeNavegacion from "../components/Navbar.jsx"
 import Team from '../components/Team.jsx'
 import Footer from '../components/Footer.jsx'
 import Eventos from "../components/Eventos.jsx"
-// import Bienvenida from "../components/Bienvenida.jsx"
 import Testimonios from '../components/Testimonios.jsx'
 import NewBienvenida from "../components/NewBienvenida.jsx"
+import SomosDynamosNew from "../components/SomosDynamosNew.jsx"
 
 function HomePage() {
 
@@ -12,7 +12,7 @@ function HomePage() {
     <div>
         <BarraDeNavegacion />
         <NewBienvenida />
-        {/* <Bienvenida  /> */}
+        <SomosDynamosNew />
         <Eventos  />
         <Testimonios  />
         <Team  />

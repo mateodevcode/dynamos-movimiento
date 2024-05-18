@@ -3,13 +3,12 @@ import mision1 from "../img/somosdynamos/mision1.jpeg";
 import mision2 from "../img/somosdynamos/mision2.jpeg";
 import mision3 from "../img/somosdynamos/mision3.jpeg";
 import { mision } from "../data/misionVision";
-import { m } from "framer-motion";
 
 function Mision() {
   const { darkMode } = useAuth();
 
   return (
-    <div className=" flex flex-row justify-center items-center lg:mt-12 md:mt-12 sm:mt-12 w-full h-full bg-imagen-aboutus sm:mb-20">
+    <div className=" flex flex-row justify-center items-center lg:mt-12 md:mt-12 sm:mt-12 w-full h-full bg-imagen-aboutus sm:mb-20 ">
       {/* Mision */}
       <div
         className="flex flex-col justify-center items-center h-auto lg:w-[600px] lg:pb-60 lg:pt-20 lg:mb-20 md:w-[600px] md:pb-60 md:pt-20 md:mb-20

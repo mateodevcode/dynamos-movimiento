@@ -4,7 +4,7 @@ import Vision from "./Vision";
 
 function SomosDynamosNew() {
   return (
-    <div>
+    <div className="bg-black">
       <Mision />
       <Vision />
     </div>
