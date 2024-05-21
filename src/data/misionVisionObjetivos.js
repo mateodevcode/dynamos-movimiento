@@ -7,3 +7,8 @@ export const vision = {
   titulo: "Visión",
   contenido: `Ser reconocidos como líderes en el ámbito espiritual y social, extendiendo nuestro alcance para transformar vidas y comunidades a través de la restauración del avivamiento, la implementación de valores cristianos y el servicio compasivo.`,
 };
+
+export const objetivoGeneral = {
+  titulo: "Objetivo General",
+  contenido: `Extender nuestra presencia y efectividad en el desarrollo de actividades y proyectos espirituales y sociales durante los próximos años, con el fin de lograr un impacto positivo significativo en las familias y comunidades a las que servimos.`,
+};

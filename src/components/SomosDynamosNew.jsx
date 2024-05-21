@@ -1,4 +1,5 @@
 import Mision from "./Mision";
+import ObjGeneral from "./ObjGeneral";
 import Vision from "./Vision";
 
 
@@ -7,6 +8,7 @@ function SomosDynamosNew() {
     <div className="bg-black">
       <Mision />
       <Vision />
+      <ObjGeneral />
     </div>
   );
 }

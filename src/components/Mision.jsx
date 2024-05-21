@@ -2,7 +2,7 @@ import { useAuth } from "../context/AuthContext";
 import mision1 from "../img/somosdynamos/mision1.jpeg";
 import mision2 from "../img/somosdynamos/mision2.jpeg";
 import mision3 from "../img/somosdynamos/mision3.jpeg";
-import { mision } from "../data/misionVision";
+import { mision } from "../data/misionVisionObjetivos";
 
 function Mision() {
   const { darkMode } = useAuth();

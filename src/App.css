@@ -9,13 +9,10 @@ body {
   /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%); */
 }
 
-
 .fondo-oscuro-claro-dark {
   background: rgb(0, 0, 0);
   /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(252, 255, 255, 1) 100%); */
 }
-
-
 
 .fondo-estandar-claro {
   background: #fff;
@@ -24,14 +21,12 @@ body {
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(228, 183, 59, 1) 52%, rgba(0, 0, 0, 1) 100%); */
 }
 
-
 .fondo-estandar-oscuro {
   background: #111827;
   color: #fff;
   /* background: rgb(0, 0, 0);
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(228, 183, 59, 1) 52%, rgba(0, 0, 0, 1) 100%); */
 }
-
 
 @keyframes show {
   from {
@@ -54,4 +49,30 @@ body {
 
   animation-range: entry 25% cover 50%;
   animation-fill-mode: both;
+}
+
+.hexagono2 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-image: url(./img/somosdynamos/objgeneral2.jpg);
+}
+
+.hexagono1 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hexagono4 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-image: url(./img/somosdynamos/objgeneral2.jpg);
+}
+
+.hexagono3 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.trapecio {
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 8% 40%);
+}
+
+.trapecio2 {
+clip-path: polygon(8% 0, 100% 0, 100% 39%, 0 40%);
 }

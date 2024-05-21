@@ -1,7 +1,7 @@
 import { useAuth } from "../context/AuthContext";
 import vision1 from "../img/somosdynamos/vision1.jpeg";
 import vision2 from "../img/somosdynamos/vision2.jpeg";
-import { vision } from "../data/misionVision";
+import { vision } from "../data/misionVisionObjetivos";
 
 function Vision() {
   const { darkMode } = useAuth();
