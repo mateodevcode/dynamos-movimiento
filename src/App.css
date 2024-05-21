@@ -53,7 +53,9 @@ body {
 
 .hexagono2 {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  background-image: url(./img/somosdynamos/objgeneral2.jpg);
+  background-image: url(./img/somosdynamos/objgeneral2.png);
+  filter:brightness(0.4)
+  
 }
 
 .hexagono1 {
@@ -62,11 +64,22 @@ body {
 
 .hexagono4 {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  background-image: url(./img/somosdynamos/objgeneral2.jpg);
+  background-image: url(./img/somosdynamos/objgeneral1.png);
+  
 }
 
 .hexagono3 {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hexagono5 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 100% 50%, 0 50%, 0% 50%);
+  background-image: url(./img/somosdynamos/objgeneral1.png);
+}
+
+.hexagono6 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-image: url(./img/somosdynamos/objgeneral2.png);
 }
 
 .trapecio {
@@ -76,3 +89,8 @@ body {
 .trapecio2 {
 clip-path: polygon(8% 0, 100% 0, 100% 39%, 0 40%);
 }
+
+.sombraText{
+  text-shadow:2PX 2PX 8PX darkgoldenrod   ;
+}
+

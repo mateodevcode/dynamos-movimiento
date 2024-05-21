@@ -1,5 +1,6 @@
 import Mision from "./Mision";
 import ObjGeneral from "./ObjGeneral";
+import ObjEspecificos from "./ObjEspecificos"
 import Vision from "./Vision";
 
 
@@ -9,6 +10,7 @@ function SomosDynamosNew() {
       <Mision />
       <Vision />
       <ObjGeneral />
+      <ObjEspecificos />
     </div>
   );
 }
