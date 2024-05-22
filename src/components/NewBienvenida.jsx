@@ -11,7 +11,7 @@ const NewBienvenida = () => {
         darkMode ? "fondo-estandar-oscuro" : "fondo-estandar-claro"
       } lg:h-screen md:h-screen sm:h-96`}
     >
-      <div className="absolute lg:top-80 md:top-80 sm:top-[72px] lg:left-32 md:left-32 sm:left-6 flex flex-row justify-center items-center">
+      <div className="absolute lg:top-80 md:top-64 sm:top-[72px] lg:left-32 md:left-32 sm:left-6 flex flex-row justify-center items-center">
         <div className="bg-white/50 dark:bg-gray-900/50 lg:p-10 md:p-10 sm:p-4 rounded-full">
           <img src={logoDynamos} alt="" className="lg:w-32 md:w-32 sm:w-10" />
         </div>
@@ -23,7 +23,7 @@ const NewBienvenida = () => {
         <img src={imgBienvenida} alt="" className="w-full" />
       </div>
       <div className="w-full">
-        <p className="lg:text-3xl md:text-3xl sm:text-sm lg:mt-36 md:mt-36 sm:mt-0 text-right lg:pl-[500px] md:pl-[500px] sm:pl-[80px] lg:pr-40 md:pr-40 sm:pr-10">
+        <p className="lg:text-3xl md:text-3xl sm:text-sm lg:mt-36 md:mt-16 sm:mt-0 text-right lg:pl-[500px] md:pl-[500px] sm:pl-[80px] lg:pr-40 md:pr-40 sm:pr-10">
           {`"Aquí podrán ver lo que hacemos como movimiento al servicio de Dios y del prójimo, y también cómo pueden unirse a nosotros en este camino de fe."`}
         </p>
       </div>
