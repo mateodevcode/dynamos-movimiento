@@ -9,7 +9,7 @@ const NewBienvenida = () => {
     <div
       className={`w-full flex flex-col justify-start items-center dark:bg-gray-900 ${
         darkMode ? "fondo-estandar-oscuro" : "fondo-estandar-claro"
-      } lg:h-screen md:h-screen sm:h-96`}
+      } lg:h-[750px] md:h-screen sm:h-96`}
     >
       <div className="absolute lg:top-80 md:top-64 sm:top-[72px] lg:left-32 md:left-32 sm:left-6 flex flex-row justify-center items-center">
         <div className="bg-white/50 dark:bg-gray-900/50 lg:p-10 md:p-10 sm:p-4 rounded-full">
