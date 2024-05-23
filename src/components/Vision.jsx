@@ -8,7 +8,7 @@ function Vision() {
 
   return (
     // principal
-    <div className="w-full h-full flex flex-col justify-center bg-imagen-aboutus lg:pt-6 lg:pb-60 sm:pt-20 pb-60">
+    <div className="w-full h-full flex flex-col justify-center bg-imagen-aboutus lg:pt-6 lg:pb-60 sm:pt-20 pb-44">
       {/* vision */}
       <div className="flex flex-col w-full">
         {/* recuadro1 */}
