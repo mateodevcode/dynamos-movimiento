@@ -17,8 +17,8 @@ function ObjGeneral() {
             ${darkMode ? "boxShadow" : "fondo-estandar-claro"}
           `}
           ></div>
-          <div className="md:w-[820px] sm:w-[350px] md:h-72 sm:h-26 bg-black text-white md:text-8xl sm:text-6xl md:mb-1 sm:mb-20 font-bold md:ml-20 sm:ml-2 sm:text-center md:mt-24">
-            <h1 className="md:mt-10">OBJETIVOS</h1>
+          <div className="md:w-[820px] sm:w-[350px] md:h-72 sm:h-12 bg-black text-white md:text-8xl sm:text-3xl md:mb-1 sm:mb-20 font-bold md:ml-20 sm:ml-2 sm:text-center md:mt-24 sm:mt-6">
+            <h1 className="md:mt-10 sm:mt-8 ">OBJETIVOS</h1>
           </div>
           <div
             className={`hexagono1 md:w-[668px] sm:w-[360px] md:h-[528px] sm:h-[300px] justify-center items-center 
