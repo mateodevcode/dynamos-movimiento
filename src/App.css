@@ -91,6 +91,10 @@ clip-path: polygon(8% 0, 100% 0, 100% 39%, 0 40%);
 }
 
 .sombraText{
-  text-shadow:2PX 2PX 8PX darkgoldenrod   ;
+  text-shadow:2PX 2PX 12PX darkgoldenrod   ;
 }
+
+
+  
+
 
