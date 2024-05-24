@@ -1,7 +1,7 @@
 export const enlacesIconFooter = [
   {
     redes: {
-      facebook: "https://www.facebook.com/profile.php?id=100092449118564",
+      facebook: "https://www.facebook.com/profile.php?id=100092266758165&mibextid=ZbWKwL",
       tiktok: "https://www.tiktok.com/@dynamosoficial?_t=8hH10TZO0FJ&_r=1",
       instagram:
         "https://www.instagram.com/dynamos_oficial/?igshid=MzMyNGUyNmU2YQ%3D%3D",
